@@ -7,9 +7,9 @@ import "./Assignment1.css"
 const Assignment1 = () => {
     return (
         <div className="assignment-1">
-            <Header className="header" />
-            <Content className="content" />
-            <Footer className="footer" />
+            <Header />
+            <Content />
+            <Footer />
         </div>
     )
 }

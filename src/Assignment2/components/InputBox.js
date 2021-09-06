@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./InputBox.css";
+import "./Component.css";
 
 const InputBox = () => {
   const [data, setData] = useState("");
@@ -10,13 +10,13 @@ const InputBox = () => {
   }
 
   return (
-    <div className="content">
+    <div className="input-box">
       <input 
         type="text"
         placeholder="Enter Text Here"
         onChange = {getData}
       />
-      <h2 style={{align: 'center'}}>{data}</h2>
+      <h3>{data}</h3>
     </div>
   );
 };

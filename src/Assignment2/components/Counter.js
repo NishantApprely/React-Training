@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./InputBox.css";
+import "./Component.css";
 
 const Counter = () => {
     const [count, setCount] = useState(0);
@@ -11,7 +11,7 @@ const Counter = () => {
 
     return (
         <div className="counter">
-            <h2>You Clicked Button {count} times</h2>
+            <h3>You Clicked Button {count} times</h3>
             <button type="button" onClick={incrementCount}>Increment</button>
         </div>
     )
