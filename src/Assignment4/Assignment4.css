@@ -1,0 +1,36 @@
+.assignment-4 {
+    text-align: center;
+}
+
+
+.new-data label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-right: 10px;
+  }
+  
+  .new-data input {
+    font: inherit;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 20rem;
+    max-width: 100%;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+
+  .new-data select {
+      margin-top:20px;
+      margin-right: 10px;
+  }
+
+  .new-data option {
+      margin-top:10px
+  }
+
+  .submit-btn {
+      margin-top: 20px;
+      width:10%;
+  }
+  

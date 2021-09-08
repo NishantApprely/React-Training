@@ -1,10 +1,11 @@
 import React from "react";
 import Counter from "./components/Counter";
 import InputBox from "./components/InputBox";
+import "./Assignment2.css"
 
 const Assignment2 = () => {
   return (
-    <div>
+    <div className="assignment-2">
       <InputBox />
       <Counter />
     </div>
