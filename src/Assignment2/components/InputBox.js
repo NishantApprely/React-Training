@@ -6,7 +6,6 @@ const InputBox = () => {
 
   function getData (event) {
         setData(event.target.value);
-        console.log(event.target.value);
   }
 
   return (

@@ -12,6 +12,9 @@ const Nav = () => {
         <Link to={"/Assignment2"}>
           <li>Assignment2</li>
         </Link>
+        <Link to={"/Assignment4"}>
+          <li>Assignment4</li>
+        </Link>
       </ul>
     </nav>
   );
