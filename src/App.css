@@ -13,6 +13,10 @@ nav{
 
 }
 
+.pages {
+    align-items: center;
+}
+
 .nav-links {
     width: 50%;
     display: flex;

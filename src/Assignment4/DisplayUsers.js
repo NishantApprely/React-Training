@@ -30,7 +30,7 @@ const DisplayUsers = (props) => {
                     <Card title="Added User" bordered={false}>
                       <p>
                         <Avatar size="large" icon={<UserOutlined />} />
-                        <h4>{tempUser.role}</h4>
+                        <p>{tempUser.role}</p>
                       </p>
                       <p>{tempUser.firstName}</p>
                       <p>{tempUser.lastName}</p>
