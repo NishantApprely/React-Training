@@ -1,24 +1,45 @@
 import React from "react";
-import DisplayUser from "./DisplayUser";
-import "./DisplayUser.css"
+import { Card, Avatar, Empty } from "antd";
+import { UserOutlined } from "@ant-design/icons";
+import "./DisplayUser.css";
 
 const DisplayUsers = (props) => {
   if (props.users.length === 0) {
-    return <h2 className="expenses-list_fallback">No User Found.</h2>;
+    return (
+      <dev>
+        <Empty />
+      </dev>
+    );
   }
 
   return (
     <div className="user-card">
-      <div>
-        <ul className="user-list">
-          {props.users.map((user) => (
-            <DisplayUser
-              key={user.id}
-              firstName={user.firstName}
-              lastName={user.lastName}
-              role={user.role}
-            />
-          ))}
+      <h4> {console.log(props.users)} </h4>
+      <div className="users">
+        <ul className="user-list" style={{ listStyle: "none" }}>
+          {/* <span>{props.users}</span> */}
+          {props.users.map((user) => console.log("Form DisplayUser", user))}
+          <span>
+            {props.users.map((user) => {
+              let tempUser = JSON.parse(user);
+              return (
+                <li key={tempUser.id} classNamestyle={{ color: "black" }}>
+                  <span>{console.log("from span", tempUser)}</span>
+                  <span>{console.log("Hii", tempUser.firstName)}</span>
+                  <div className="display-user">
+                    <Card title="Added User" bordered={false}>
+                      <p>
+                        <Avatar size="large" icon={<UserOutlined />} />
+                        <h4>{tempUser.role}</h4>
+                      </p>
+                      <p>{tempUser.firstName}</p>
+                      <p>{tempUser.lastName}</p>
+                    </Card>
+                  </div>
+                </li>
+              );
+            })}
+          </span>
         </ul>
       </div>
     </div>

@@ -1,3 +1,8 @@
+*{
+    align-items: center;
+    text-align: center;
+}
+
 .assignment-4 {
     text-align: center;
     height: 200px;
@@ -6,6 +11,11 @@
     margin-left : 25%;
     margin-right : 25%;
     background-color: #d88e70;
+}
+
+.table {
+    align-items: center;
+    text-align: center;
 }
 
 
