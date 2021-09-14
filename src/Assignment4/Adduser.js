@@ -48,8 +48,10 @@ const Adduser = (props) => {
       ...values,
       id: Math.random().toString(),
     };
-    console.log("Form Data", user);
-    props.onAddUser(user);
+    const myobj = JSON.stringify(user);
+    console.log(myobj);
+    //console.log("Form Data", JSON.stringify(user));
+    props.onAddUser(myobj);
   };
 
   // const validate = (values) => {
